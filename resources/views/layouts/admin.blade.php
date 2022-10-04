@@ -44,7 +44,7 @@
         <!-- Nav Item - Dashboard -->
         <li class="nav-item {{ Nav::isRoute('home') }}">
             <a class="nav-link" href="{{ route('home') }}">
-                <i class="fas fa-fw fa-home"></i>
+                {{-- <i class="fas fa-fw fa-home"></i> --}}
                 <span>{{ __('Home') }}</span></a>
         </li>
 
@@ -52,9 +52,9 @@
         <hr class="sidebar-divider d-none d-md-block">
 
         <!-- Sidebar Toggler (Sidebar) -->
-        <div class="text-center d-none d-md-inline">
+        {{-- <div class="text-center d-none d-md-inline">
             <button class="rounded-circle border-0" id="sidebarToggle"></button>
-        </div>
+        </div> --}}
 
     </ul>
     <!-- End of Sidebar -->
@@ -92,7 +92,6 @@
                             </a>
                             <div class="dropdown-divider"></div> --}}
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                 {{ __('Sair') }}
                             </a>
                         </div>
@@ -120,9 +119,9 @@
 </div>
 
 <!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded" href="#page-top">
+{{-- <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
-</a>
+</a> --}}
 
 <!-- Logout Modal-->
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -177,10 +176,10 @@
                 "zeroRecords": "Nenhum registro encontrado",
                 "search": "Pesquisar ",
                 "paginate": {
-                    "next": "<i class='fas fa-angle-right'></i>",
-                    "previous": "<i class='fas fa-angle-left'></i>",
-                    "first": "<i class='fas fa-angle-double-left'></i>",
-                    "last": "<i class='fas fa-angle-double-right'></i>"
+                    "next": "Próximo",
+                    "previous": "Anterior",
+                    "first": "Primeiro",
+                    "last": "Último"
                 }
             },
             "scrollX": true,
